@@ -1,0 +1,127 @@
+.app-home-container {
+  background-color: #181818;
+  padding-top: 1px;
+  min-height: 100vh;
+}
+
+/* Random Movie CSS */
+
+.random-movie-description-container {
+  padding: 125px 32px;
+}
+
+@media screen and (min-width: 576px) {
+  .random-movie-description-container {
+    padding: 120px 160px;
+  }
+}
+
+.random-movie-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 576px) {
+  .random-movie-title {
+    font-size: 64px;
+  }
+}
+
+.random-movie-description {
+  font-family: 'Robot';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  max-width: 443px;
+}
+
+@media screen and (min-width: 576px) {
+  .random-movie-description {
+    font-size: 20px;
+  }
+}
+
+.random-movie-play-btn {
+  padding: 8px 24px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #171f46;
+}
+
+.random-movie-view {
+  padding: 0px 32px;
+}
+
+@media screen and (min-width: 576px) {
+  .random-movie-view {
+    padding: 0px 160px;
+  }
+}
+
+.random-movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 466px;
+  background-color: #000000;
+  padding: 1px 160px;
+}
+
+/* Failure view CSS */
+
+.error-triangle-icon {
+  color: #e50014;
+  font-size: 45px;
+}
+
+.failure-view-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.try-again-btn {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #171f46;
+  cursor: pointer;
+}
+
+/* ------------- */
+
+.home-slick-container {
+  padding: 0px 32px;
+}
+
+@media screen and (min-width: 576px) {
+  .home-slick-container {
+    padding: 0px 160px;
+  }
+}
+
+.home-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 48px;
+}

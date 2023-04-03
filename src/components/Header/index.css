@@ -1,0 +1,137 @@
+.movie-header {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(19, 19, 19, 0.2);
+}
+
+@media screen and (min-width: 576px) {
+  .movie-header {
+    padding: 32px 165px;
+  }
+}
+
+.header-container-1 {
+  display: flex;
+  align-items: center;
+}
+
+.headers-movies-img-logo {
+  width: 135px;
+  height: 39px;
+}
+
+@media screen and (min-width: 576px) {
+  .headers-movies-img-logo {
+    margin-right: 48px;
+  }
+}
+
+.header-items-list {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .header-items-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.route-link {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.header-list-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffff;
+}
+
+.header-container-2 {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 25px;
+  color: #ffff;
+}
+
+@media screen and (min-width: 576px) {
+  .search-icon {
+    margin-right: 32px;
+  }
+}
+
+.avatar {
+  display: none;
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (min-width: 576px) {
+  .avatar {
+    display: block;
+  }
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-drop-drown {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 576px) {
+  .menu-drop-drown {
+    display: none;
+  }
+}
+
+.drop-drown-container {
+  padding: 10px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(19, 19, 19, 0.2);
+}
+.dropdown-list-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+.dropdown-list-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffff;
+}
+
+.cancel-dropdown-btn {
+  background-color: transparent;
+  border: 0;
+}
+
+.cancel-dropdown-img {
+  width: 20px;
+  height: 20px;
+}

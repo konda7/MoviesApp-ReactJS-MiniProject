@@ -1,0 +1,135 @@
+.login-form-container {
+  background-color: #000000;
+  padding: 32px;
+}
+
+@media screen and (min-width: 576px) {
+  .login-form-container {
+    background-image: url('https://res.cloudinary.com/dvhrrtgpt/image/upload/v1680323652/netfilx_1_1x_xz8mgj.png');
+    min-height: 100vh;
+    background-size: cover;
+    padding: 48px 165px;
+  }
+}
+
+.movies-logo-image {
+  width: 100px;
+  height: 27px;
+}
+
+@media screen and (min-width: 576px) {
+  .movies-logo-image {
+    width: 180px;
+    height: 52px;
+  }
+}
+
+.form-content-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .form-content-container {
+    height: 100vh;
+    justify-content: center;
+  }
+}
+
+.form-container {
+  background-color: transparent;
+}
+
+@media screen and (min-width: 576px) {
+  .form-container {
+    background-color: #100f14;
+    opacity: 0.8;
+    border-radius: 8px;
+    width: 456px;
+    height: 440px;
+    padding: 64px 48px;
+  }
+}
+
+.login-heading {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 576px) {
+  .login-heading {
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 296px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .input-container {
+    width: 360px;
+  }
+}
+
+.label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.input {
+  background-color: #333333;
+  height: 40px;
+  border: 0;
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #e2e8f0;
+  padding: 8px 16px;
+}
+
+.login-error-msg {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #dc2626;
+}
+
+.login-btn {
+  background: #e50914;
+  border-radius: 4px;
+  border: 0;
+  padding: 8px 20px;
+  width: 296px;
+  height: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 576px) {
+  .login-btn {
+    border-radius: 8px;
+    width: 360px;
+  }
+}
