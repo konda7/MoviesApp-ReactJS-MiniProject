@@ -1,0 +1,24 @@
+.footer-container {
+  background-color: #131313;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-container {
+}
+
+.footer-icons {
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+.footer-contact-us-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
