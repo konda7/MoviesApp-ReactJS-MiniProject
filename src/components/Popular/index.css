@@ -4,12 +4,12 @@
 }
 
 .popular-movies-content-container {
-  padding: 0px 32px;
+  padding: 20px 30px;
 }
 
 @media screen and (min-width: 576px) {
   .popular-movies-content-container {
-    padding: 0px 160px;
+    padding: 20px 120px;
   }
 }
 
@@ -31,7 +31,7 @@
 
 .popular-movie-item {
   margin-bottom: 10px;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .popular-movie-img {
@@ -42,8 +42,8 @@
 
 @media screen and (min-width: 576px) {
   .popular-movie-img {
-    width: 200px;
-    height: 140px;
+    width: 230px;
+    height: 150px;
     border-radius: 8px;
   }
 }

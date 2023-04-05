@@ -7,12 +7,12 @@
 /* Random Movie CSS */
 
 .random-movie-description-container {
-  padding: 125px 32px;
+  padding: 120px 30px;
 }
 
 @media screen and (min-width: 576px) {
   .random-movie-description-container {
-    padding: 120px 160px;
+    padding: 120px 120px;
   }
 }
 
@@ -113,7 +113,7 @@
 
 @media screen and (min-width: 786px) {
   .home-slick-container {
-    padding: 0px 160px;
+    padding: 0px 120px;
   }
 }
 

@@ -4,6 +4,8 @@ import {Component} from 'react'
 
 import Cookies from 'js-cookie'
 
+import {Link} from 'react-router-dom'
+
 import Loader from 'react-loader-spinner'
 
 import {GoAlert} from 'react-icons/go'
@@ -11,8 +13,6 @@ import {GoAlert} from 'react-icons/go'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
-import Header from '../Header'
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -65,7 +65,6 @@ class TrendingNow extends Component {
 
   renderTrendingNowSuccessView = () => {
     const {trendingNowMoviesList} = this.state
-    console.log(trendingNowMoviesList)
 
     const settings = {
       dots: false,
@@ -103,11 +102,13 @@ class TrendingNow extends Component {
         <Slider {...settings}>
           {trendingNowMoviesList.map(eachMovie => (
             <div className="slick-item" key={eachMovie.id}>
-              <img
-                src={eachMovie.posterPath}
-                alt={eachMovie.title}
-                className="logo-image"
-              />
+              <Link to={`/movies/${eachMovie.id}`}>
+                <img
+                  src={eachMovie.posterPath}
+                  alt={eachMovie.title}
+                  className="logo-image"
+                />
+              </Link>
             </div>
           ))}
         </Slider>
@@ -116,39 +117,29 @@ class TrendingNow extends Component {
   }
 
   onClickTryAgainBtn = () => {
-    this.getOriginalMoviesList()
+    this.getTrendingMoviesList()
   }
 
   renderTrendingNowFailureView = () => (
-    <>
-      <Header />
-      <div className="random-movie-view">
-        <div className="random-movie-container">
-          <GoAlert className="error-triangle-icon" />
-          <p className="failure-view-description">
-            Something went wrong. Please try again
-          </p>
-          <button
-            type="button"
-            className="try-again-btn"
-            onClick={this.onClickTryAgainBtn}
-          >
-            Try Again
-          </button>
-        </div>
-      </div>
-    </>
+    <div className="movie-slick-view">
+      <GoAlert className="error-triangle-icon" />
+      <p className="failure-view-description">
+        Something went wrong. Please try again
+      </p>
+      <button
+        type="button"
+        className="try-again-btn"
+        onClick={this.onClickTryAgainBtn}
+      >
+        Try Again
+      </button>
+    </div>
   )
 
   renderTrendingNowLoadingView = () => (
-    <>
-      <Header />
-      <div className="random-movie-view">
-        <div className="random-movie-container" data-testid="loader">
-          <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
-        </div>
-      </div>
-    </>
+    <div className="movie-slick-view" data-testid="loader">
+      <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
+    </div>
   )
 
   renderTrendingNowSlick = () => {

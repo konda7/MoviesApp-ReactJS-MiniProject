@@ -44,3 +44,13 @@
   color: white;
   font-size: 30px;
 }
+
+.movie-slick-view {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  border: 1px solid red;
+}

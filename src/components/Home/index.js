@@ -10,7 +10,8 @@ import {GoAlert} from 'react-icons/go'
 
 import Header from '../Header'
 import Footer from '../Footer'
-import TrendingNow from '../TrendingNow'
+import TrendingNow from '../TrendingNowSlider'
+import Originals from '../OriginalsSlider'
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -70,7 +71,6 @@ class Home extends Component {
       originalMoviesList[Math.floor(Math.random() * originalMoviesList.length)]
 
     const {title, posterPath, overview} = randomMovie
-    console.log(posterPath)
 
     const mystyle = {
       paddingTop: '1px',
@@ -144,6 +144,8 @@ class Home extends Component {
   }
 
   render() {
+    const {apiStatus, originalMoviesList} = this.state
+
     return (
       <div className="app-home-container">
         {this.renderRandomMovieDetails()}
@@ -151,6 +153,11 @@ class Home extends Component {
           <h1 className="home-heading">Trending Now</h1>
           <TrendingNow />
           <h1 className="home-heading">Originals</h1>
+          <Originals
+            apiStatus={apiStatus}
+            originalMoviesList={originalMoviesList}
+            onClickTryAgainBtn={this.onClickTryAgainBtn}
+          />
         </div>
         <Footer />
       </div>

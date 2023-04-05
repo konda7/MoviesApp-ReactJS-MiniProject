@@ -4,6 +4,8 @@ import Cookies from 'js-cookie'
 
 import {Component} from 'react'
 
+import {Link} from 'react-router-dom'
+
 import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
@@ -67,11 +69,13 @@ class Popular extends Component {
         <ul className="popular-movies-list">
           {popularMoviesList.map(eachMovie => (
             <li className="popular-movie-item" key={eachMovie.id}>
-              <img
-                src={eachMovie.posterPath}
-                alt={eachMovie.title}
-                className="popular-movie-img"
-              />
+              <Link to={`/movies/${eachMovie.id}`}>
+                <img
+                  src={eachMovie.posterPath}
+                  alt={eachMovie.title}
+                  className="popular-movie-img"
+                />
+              </Link>
             </li>
           ))}
         </ul>
