@@ -61,7 +61,7 @@ class Home extends Component {
     }
   }
 
-  //   Random Movie Prview View
+  //   Random Movie Preview
 
   renderRandomMovieSuccessView = () => {
     const {originalMoviesList} = this.state

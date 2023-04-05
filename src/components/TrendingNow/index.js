@@ -9,6 +9,8 @@ import Loader from 'react-loader-spinner'
 import {GoAlert} from 'react-icons/go'
 
 import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 import Header from '../Header'
 
@@ -80,7 +82,7 @@ class TrendingNow extends Component {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 785,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,

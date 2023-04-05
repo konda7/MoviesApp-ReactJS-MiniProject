@@ -1,34 +1,46 @@
 .slick-container {
-  width: 50vw;
+  width: 85vw;
   margin-top: 10px;
   padding: 0px;
 }
 
+.slick-item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .logo-image {
-  margin: 10px;
-  height: 180px;
-  width: 180px;
+  height: 110px;
+  width: 90%;
+  border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .slick-container {
-    width: 60vw;
+    width: 70vw;
   }
   .logo-image {
-    height: 100px;
-    width: 100px;
+    height: 120px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 993px) {
   .logo-image {
-    margin: 10px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
   }
   .slick-container {
-    width: 70vw;
-    margin-top: 10px;
-    padding: 0px;
+    width: 80vw;
   }
+}
+
+.slick-prev:before {
+  content: '<';
+  color: white;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: '>';
+  color: white;
+  font-size: 30px;
 }
