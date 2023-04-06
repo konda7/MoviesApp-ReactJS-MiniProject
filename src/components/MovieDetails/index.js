@@ -138,9 +138,9 @@ class MovieDetails extends Component {
             <h1 className="movie-details-sub-heading">Genres</h1>
             <ul className="movie-details-sub-items-list">
               {genres.map(eachGenre => (
-                <li key={eachGenre.id} className="movie-details-sub-item">
+                <p key={eachGenre.id} className="movie-details-sub-item">
                   {eachGenre.name}
-                </li>
+                </p>
               ))}
             </ul>
           </div>
@@ -148,9 +148,9 @@ class MovieDetails extends Component {
             <h1 className="movie-details-sub-heading">Audio Available</h1>
             <ul className="movie-details-sub-items-list">
               {spokenLanguages.map(eachLanguage => (
-                <li key={eachLanguage.id} className="movie-details-sub-item">
+                <p key={eachLanguage.id} className="movie-details-sub-item">
                   {eachLanguage.englishName}
-                </li>
+                </p>
               ))}
             </ul>
           </div>
@@ -216,7 +216,7 @@ class MovieDetails extends Component {
     <>
       <div className="movies-details-view">
         <Header />
-        <div className="movies-details-loader-container" data-testid="loader">
+        <div className="movies-details-loader-container" testid="loader">
           <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
         </div>
       </div>

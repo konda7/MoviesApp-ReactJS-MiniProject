@@ -8,6 +8,13 @@
 
 .random-movie-description-container {
   padding: 120px 30px;
+  background-image: linear-gradient(
+    to top,
+    black,
+    transparent,
+    transparent,
+    transparent
+  );
 }
 
 @media screen and (min-width: 576px) {

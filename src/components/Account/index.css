@@ -1,0 +1,117 @@
+.account-app-container {
+  background-color: #131313;
+}
+
+.account-details-container {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  height: 80vh;
+}
+
+@media screen and (min-width: 576px) {
+  .account-details-container {
+    padding: 20px 120px;
+  }
+}
+
+.account-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #131313;
+  margin: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .account-heading {
+    font-size: 36px;
+  }
+}
+
+.horizontal-line {
+  border: 1px solid #cbd5e1;
+}
+
+.details-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.details-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #94a3b8;
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 576px) {
+  .details-heading {
+    font-size: 24px;
+  }
+}
+
+.account-details-content-container {
+}
+.mail-plan-content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1e293b;
+  margin: 0;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .mail-plan-content {
+    font-size: 24px;
+  }
+}
+
+.password-details {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #64748b;
+}
+
+@media screen and (min-width: 576px) {
+  .password-details {
+    font-size: 24px;
+  }
+}
+
+.plan-content-container {
+  display: flex;
+  align-items: center;
+}
+
+.ultra-hd {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.logout-btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logout-btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #e50914;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}

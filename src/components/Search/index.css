@@ -1,0 +1,50 @@
+.search-app-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+
+/* --------------------- */
+
+.search-results-list-items {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 576px) {
+  .search-results-list-items {
+    padding: 20px 120px;
+  }
+}
+
+.search-result-list-item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.search-result-img {
+  width: 220px;
+  height: 140px;
+  border-radius: 8px;
+}
+
+/* ------------ */
+
+.search-result-view {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-result-failure-img {
+}
+
+.search-result-failure-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}

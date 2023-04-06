@@ -5,13 +5,46 @@ import {Component} from 'react'
 import {Link, withRouter} from 'react-router-dom'
 
 import {HiOutlineSearch} from 'react-icons/hi'
+import {FaSearch} from 'react-icons/fa'
 
 class Header extends Component {
   state = {
     showDropDown: false,
+    headerSearchInput: '',
   }
 
-  renderSearchBar = () => <p>Hi</p>
+  renderSearchBar = () => {
+    const {searchInputBtn} = this.props
+    const {headerSearchInput} = this.state
+
+    const onClickSearchResultBtn = () => {
+      searchInputBtn(headerSearchInput)
+    }
+
+    const onChangeSearchInputValue = event => {
+      this.setState({headerSearchInput: event.target.value})
+    }
+
+    return (
+      <div className="searchbar-container">
+        <input
+          type="search"
+          className="search-input"
+          placeholder="Search Movie"
+          onChange={onChangeSearchInputValue}
+          value={headerSearchInput}
+        />
+        <button
+          type="button"
+          className="search-icon-btn"
+          onClick={onClickSearchResultBtn}
+          data-testid="searchButton"
+        >
+          <FaSearch className="search-bar-icon" />
+        </button>
+      </div>
+    )
+  }
 
   onClickCancelDropdown = () => {
     this.setState({showDropDown: false})
@@ -51,10 +84,9 @@ class Header extends Component {
   }
 
   render() {
-    const {match} = this.props
-    const {path} = match
-
     const {showDropDown} = this.state
+
+    const {searchBar} = this.props
 
     return (
       <>
@@ -79,7 +111,7 @@ class Header extends Component {
             </ul>
           </div>
           <div className="header-container-2">
-            {path === 'search' ? (
+            {searchBar ? (
               this.renderSearchBar()
             ) : (
               <Link to="/search" className="route-link">
@@ -89,7 +121,7 @@ class Header extends Component {
             <Link to="/account" className="route-link">
               <img
                 src="https://res.cloudinary.com/dvhrrtgpt/image/upload/v1680433616/Avatar_uvv18m.png"
-                alt="avatar"
+                alt="profile"
                 className="avatar"
               />
             </Link>
