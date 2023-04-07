@@ -120,8 +120,10 @@ class Home extends Component {
   renderRandomMovieLoadingView = () => (
     <>
       <Header />
-      <div className="random-movie-container" data-testid="loader">
-        <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
+      <div className="random-movies-loading-view-container">
+        <div className="random-movie-container" data-testid="loader">
+          <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
+        </div>
       </div>
     </>
   )

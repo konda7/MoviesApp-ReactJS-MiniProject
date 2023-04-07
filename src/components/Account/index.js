@@ -10,6 +10,8 @@ const Account = props => (
     {value => {
       const {username, password, triggerLogout} = value
 
+      console.log(username, password)
+
       const onClickLogoutBtn = () => {
         triggerLogout(props)
       }

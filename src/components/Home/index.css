@@ -132,3 +132,13 @@
   color: #ffffff;
   margin-top: 48px;
 }
+
+.random-movies-loading-view-container {
+  padding: 0px 30px;
+}
+
+@media screen and (min-width: 786px) {
+  .random-movies-loading-view-container {
+    padding: 0px 120px;
+  }
+}

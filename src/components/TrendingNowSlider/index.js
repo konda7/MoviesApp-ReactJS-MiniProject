@@ -8,8 +8,6 @@ import {Link} from 'react-router-dom'
 
 import Loader from 'react-loader-spinner'
 
-import {GoAlert} from 'react-icons/go'
-
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -122,7 +120,11 @@ class TrendingNow extends Component {
 
   renderTrendingNowFailureView = () => (
     <div className="movie-slick-view">
-      <GoAlert className="error-triangle-icon" />
+      <img
+        src="https://res.cloudinary.com/dvhrrtgpt/image/upload/v1680865179/alert-triangle_rpx4j9.png"
+        alt="failure view"
+        className="slick-failure-view-img"
+      />
       <p className="failure-view-description">
         Something went wrong. Please try again
       </p>

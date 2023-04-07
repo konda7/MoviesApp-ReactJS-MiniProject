@@ -103,7 +103,7 @@ class MovieDetails extends Component {
       voteCount,
     } = movieDetailsList
 
-    const mystyle = {
+    const myStyle = {
       backgroundImage: `url(${posterPath})`,
       backgroundSize: '100% 100%',
     }
@@ -114,9 +114,22 @@ class MovieDetails extends Component {
 
     const releaseYear = releaseDate.slice(0, 4)
 
+    const dateString = new Date(releaseDate)
+    let dateEnd
+    const day = dateString.getDay().toString()
+    if (day.endsWith('3')) {
+      dateEnd = 'rd'
+    } else if (day.endsWith('2')) {
+      dateEnd = 'nd'
+    } else if (day.endsWith('1')) {
+      dateEnd = 'st'
+    } else {
+      dateEnd = 'th'
+    }
+
     return (
       <>
-        <div style={mystyle}>
+        <div style={myStyle}>
           <Header />
           <div className="movie-details-description-container">
             <h1 className="movie-details-heading">{title}</h1>
@@ -164,7 +177,12 @@ class MovieDetails extends Component {
             <h1 className="movie-details-sub-heading">Budget</h1>
             <p className="movie-details-sub-item">{budget}</p>
             <h1 className="movie-details-sub-heading">Release Date</h1>
-            <p className="movie-details-sub-item">{releaseDate}</p>
+            <p className="movie-details-sub-item">{`${day}${dateEnd} ${dateString.toLocaleString(
+              'default',
+              {
+                month: 'long',
+              },
+            )} ${dateString.getFullYear()}`}</p>
           </div>
         </div>
         <div className="similar-movie-details">

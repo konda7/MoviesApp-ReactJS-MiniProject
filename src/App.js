@@ -37,6 +37,7 @@ class App extends Component {
 
   render() {
     const {username, password} = this.state
+    console.log(username)
 
     return (
       <AccountDetailsContext.Provider
