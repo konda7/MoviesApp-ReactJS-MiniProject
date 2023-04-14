@@ -25,11 +25,10 @@ class LoginForm extends Component {
           } = value
 
           const onSuccessfulLogin = jwtToken => {
+            Cookies.set('jwt_token', jwtToken, {expires: 30})
+
             const {history} = this.props
             history.replace('/')
-
-            console.log(jwtToken)
-            Cookies.set('jwt_token', jwtToken, {expires: 30})
           }
 
           const submitForm = async event => {

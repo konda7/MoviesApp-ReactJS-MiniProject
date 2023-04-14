@@ -33,16 +33,9 @@
   }
 }
 
-.slick-prev:before {
-  content: '<';
-  color: white;
-  font-size: 30px;
-}
-
+.slick-prev:before,
 .slick-next:before {
-  content: '>';
   color: white;
-  font-size: 30px;
 }
 
 .movie-slick-view {
